@@ -1,0 +1,85 @@
+Step - 1 : Install Git
+
+Step - 2 : Open Git Bash
+
+X------------------------------------------------------------------X
+
+<computer username> ~<location>
+$ git config --global user.name <username>
+
+<computer username> ~<location>
+$ git config --global user.email "<user_email>"
+
+<computer username> ~<location>
+$ touch .gitignore
+
+<computer username> ~<location>
+$ git init
+Initialized empty Git repository in <complete_location>/.git/
+
+<computer username> ~<location> (master)
+$ git add .
+
+<computer username> ~<location> (master)
+$ git commit -m "Initial Commit"
+[master (root-commit) acde945] Initial Commit
+ m files changed, p insertions(+)
+ create mode <random_number> <filename>
+ create mode <random_number> <filename>
+ create mode <random_number> <filename>
+ .....
+  create mode <random_number> <filename>
+
+<computer username> ~<location> (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+<computer username> ~<location> (master)
+$ git remote add origin <ssh_location_of_repository>
+
+<computer username> ~<location> (master)
+$ git push origin master
+fatal: Could not read from remote repository.
+Please make sure you have the correct access rights
+and the repository exists.
+
+<computer username> ~<location> (master)
+$ ssh-keygen -t rsa -b 4096 -C "<user_email>"
+Generating public/private rsa key pair
+Enter file in which to save the key (<key_location>):
+Created directory '<directory>'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in <key_location>
+Your public key has been saved in <key_location>.pub
+The key fingerprint is:
+<random_thing>
+The key's randomart image is:
+<key>
+
+<computer username> ~<location> (master)
+$ ^C
+
+<computer username> ~<location> (master)
+$ cat <key_location>.pub
+<ssh_key>
+
+<computer username> ~<location> (master)
+$ git push origin master
+Enumerating objects: n, done.
+Counting objects: 100% (n/n), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (n/n), done.
+Writing objects: 100% (n/n), x KiB | y KiB/s, done.
+Total n (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:VkpVishal001/School_Codes.git
+ * [new branch]      master -> master
+
+X------------------------------------------------------------------X
+
+To upload files :
+
+1. git add .
+2. git commit -m "<Add comment here>"
+3. git push origin master

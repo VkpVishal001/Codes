@@ -1,0 +1,262 @@
+(.) Comments :
+
+# This is a single line comment
+
+"""
+This is a multi-line comment
+(Also used for documentation)
+"""
+
+(.) Print Statement :
+
+print("<Text Here>",sep="<Separator Here>",end="<Ending character here>")
+
+(.) Variables and Data Types :
+
+variable1 = 123 # Integer (int)
+variable2 = "Abcd" # String (str)
+variable3 = 382.94 # Float (float)
+variable4 = True # Boolean (bool)
+variable5 = 6+5j # Complex (complex)
+variable6 = [1, "A", 3.6, True, 3+2j] # List (list)
+variable7 = (1, "A", 3.6, True, 3+2j) # Tuple (tuple)
+variable8 = {1, "A", 3.6, True, 3+2j} # Set (set)
+variable9 = {1:[1,4], 2.0:("D",389.5), "A":{3,"Gg"}, True:5+8j} # Dictionary (dict)
+
+(.) Input Statement :
+
+input1 = input("<Enter message for input here>")
+
+(.) Type Casting :
+
+input1 = int(input("<Enter message for input here>"))
+
+variable1 = 5
+variable2 = float(5)
+
+(.) Range Function :
+
+range1 = range(1,10,1) # (<start_value>, <end_value>, <step_value>)
+# list(range1) = [1,2,3,4,5,6,7,8,9]
+
+(.) Escape Sequences :
+
+1. New Line -> print("\n")
+2. Backslash -> print("\\)
+3. Single Quote -> print("\'")
+4. Tab -> print("\t")
+5. Backspace -> print("\b")
+6. Octal -> print(0o<Enter integer here>)
+7. Hexadecimal -> print(0x<Enter integer here>)
+
+(.) Conditional Statements (Syntax) :
+
+if <condition1>:
+    <statement1>
+
+elif <condition2>: # Optional
+    <statement2>
+
+else: # Optional
+    <statement3>
+
+(.) Loops :
+
+1. For loop (syntax) :
+
+for <variable> in <sequence>:
+    <statement>
+
+2. While loop (syntax) :
+
+while <condition>:
+    <statement>
+
+(.) Break , Continue & Pass :
+
+1. break : Breaks out of one loop it is within .
+
+Ex: for i in range(7):
+        if (i==5):
+            break
+        else:
+            print(i, end=" ")
+
+# Output : 0 1 2 3 4 
+
+2. continue : Skips that particular case and goes to next iteration in a loop .
+
+Ex: for i in range(7):
+        if (i==5):
+            break
+        else:
+            print(i, end=" ")
+
+# Output : 0 1 2 3 4 6
+
+3. pass : Can be used as a replacement to an empty code .
+
+Ex: for i in range(10):
+        pass
+
+(.) Indexing :
+
+String -> "<Character-0><Charcater-1>...<Character-n>" # n is an integer
+List -> [<Element-0>,<Element-1>,...,<Element-n>] # n is an integer
+Same goes for tuples,sets and dictionaries
+
+Note : For negative indices , take <length_of_string/sequence>-<indice_given>
+In above examples , length of string/sequence = n+1
+
+Example : list1 = [1,"Abc",4.6,True,36]
+list1[-1] = list[5-1] = list[4] = 36
+
+(.) Slicing :
+
+When value has some data (in the form of string/sequence) :-
+
+value[start_value, end_value, step_value] ,
+
+will help slice down paticular elements from that value .
+
+Ex: string1 = "Rainbow" => string[4,6] = "bow"
+Ex: list1 = [1,4,6,3,7] => list1[0,4,2] = [1,4,7]
+
+Default values of :-
+
+1. start_value = 0
+2. end_value = length of that string/sequence
+3. step_value = 1
+
+(.) String Methods :
+
+1. isalnum() method : Returns True if all characters in the string are alphanumeric
+# Syntax : string_variable.isalnum()
+
+2. isalpha() method : Returns True if all characters in the string are alphabet
+# Syntax : string_variable.isalpha()
+
+3. isdecimal() method : Returns True if all characters in the string are decimals
+# Syntax : string_variable.isdecimal()
+
+4. isdigit() method : Returns True if all characters in the string are digits
+# Syntax : string_variable.isdigit()
+
+5. islower() method : Returns True if all characters in the string are lower case
+# Syntax : string_variable.islower()
+
+6. isspace() method : Returns True if all characters in the string are whitespaces
+# Syntax : string_variable.isspace()
+
+7. isupper() method : Returns True if all characters in the string are upper case
+# Syntax : string_variable.isupper()
+
+8. lower() method : Converts a string into lower case
+# Syntax : string_variable.lower()
+
+9. upper() method : Converts a string into upper case
+# Syntax : string_variable.upper()
+
+10. strip() method : It removes leading and trailing spaces in the string
+# Syntax : string_variable.strip()
+
+(.) List Methods :
+
+1. index method : Returns the index of the first element with the specified value
+# Syntax : list.index(element)
+
+2. append method : Adds an element at the end of the list
+# Syntax : list.append(element)
+
+3. extend method : Add the elements of an iterable to the end of the current list
+# Syntax : list.extend(iterable)
+
+4. insert method : Adds an element at the specified position
+# Syntax : list.insert(position,element)
+
+5. pop method : Removes the element at the specified position and returns it
+# Syntax : list.pop(position)
+
+6. remove method : Removes the first occurrence of a given item from the list
+# Syntax : list.remove(element)
+
+7. clear method : Removes all the elements from the list
+# Syntax : list.clear()
+
+8. count method : Returns the number of elements with the specified value
+# Syntax : list.count(value)
+
+9. reverse method : Reverse the order of the list
+# Syntax : list.reverse()
+
+10. sort method : Sorts the list
+# Syntax : list.sort(reverse=True|False)
+
+(.) Tuple Methods :
+
+1. count method : It returns the number of times a specified value occurs in a tuple
+# Syntax : tuple.count(value)
+
+2. index method : It searches the tuple for a specified value and returns the position
+# Syntax : tuple.index(value)
+
+(.) Set Methods :
+
+1. add() method : Adds an element to a set
+# Syntax : set.add(element)
+
+2. clear() method : Remove all elements from a set
+# Syntax : set.clear()
+
+3. discard() method : Removes the specified item from the set
+# Syntax : set.discard(value)
+
+4. intersection() method : Returns intersection of two or more sets
+# Syntax : set.intersection(set1,set2,...)
+
+5. issubset() method : Checks if a set is a subset of another set
+# Syntax : set.issubset(set)
+
+6. pop() method : Removes an element from the set
+# Syntax : set.pop()
+
+7. remove() method : Removes the specified element from the set
+# Syntax : set.remove(item)
+
+8. union() method : Returns the union of sets
+# Syntax : set.union(set1,set2,...)
+
+(.) Dictionaries :
+
+The dictionary is an unordered set of comma-separated key: value pairs, within {}, with the requirement that within a dictionary, no two keys can be the same
+
+1. Creating a dictionary (Syntax) : <dictionary-name>={<key>:<value>,<key>:<value>...}
+
+2. Adding Element to a dictionary (Syntax) : <dictionary>[<key>]=<value>
+
+3. Updating Element in a dictionary : If the specified key already exists, then its value will get updated (Syntax : <dictionary>[<key>]=<value>)
+
+4. Deleting Element from a dictionary (Syntax) : del<dictionary>[<key>]
+
+(.) Dictionary Methods :
+
+1. len() method : It returns the length of the dictionary
+# Syntax : len(dictionary)
+
+2. clear() method : Removes all the elements from the dictionary
+# Syntax : dictionary.clear()
+
+3. get() method : Returns the value of the specified key
+# Syntax : dictionary.get(keyname)
+
+4. items() method : Returns a list containing a tuple for each key-value pair
+# Syntax : dictionary.items()
+
+5. keys() method : Returns a list containing the dictionary's keys
+# Syntax : dictionary.keys()
+
+6. values() method : Returns a list of all the values in the dictionary
+# Syntax : dictionary.values()
+
+7. update() method : Updates the dictionary with the specified key-value pairs
+# Syntax : dictionary.update(iterable)
