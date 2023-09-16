@@ -6,5 +6,6 @@ def p(n,r):
         print(k)
         return p(n,r+1)
     
-x = p(576,1)
+num = int(input("Enter the number : "))
+x = p(num,1)
 print(x)

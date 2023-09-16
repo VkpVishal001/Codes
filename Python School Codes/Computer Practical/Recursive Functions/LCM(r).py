@@ -7,4 +7,4 @@ def LCM(a,b,i):
 a = int(input("Enter 1st number : "))
 b = int(input("Enter 2nd number : ")) 
 k = LCM(a,b,max(a,b))
-print(k)
+print()

@@ -260,3 +260,46 @@ The dictionary is an unordered set of comma-separated key: value pairs, within {
 
 7. update() method : Updates the dictionary with the specified key-value pairs
 # Syntax : dictionary.update(iterable)
+
+(.) Functions :
+
+A function is a block of code that performs a specific task. You can pass parameters into a function. It helps us to make our code more organized and manageable.
+
+1. Defining a function : 
+
+def my_function(<parameters>):
+    <Statements>
+
+(.) File Handling :
+
+File handling refers to reading or writing data from files. Python provides some functions that allow us to manipulate data in the files.
+
+1. open() function (Syntax) : var_name = open("file name","opening mode")
+
+2. close() function : var_name.close()
+
+3. Read functions : It contains different methods, read(), readline() and readlines()
+
+3a. read() : It return one big string
+3b. read-lines() : It returns a list of lines
+3c. readline() : It returns one line at a time
+
+4. Write functions :
+
+4a. write() : It is used to write a fixed sequence of characters in a file
+4b. writelines() : It is used to write a list of strings in a file
+
+To append to an existing file, simply open the file in append mode (a).
+Like : file=open("Hello.txt","a")
+
+(.) Exception Handling : An exception is an unusual condition that results in an interruption in the flow of the program.
+
+try and except
+A basic try-catch block in python. When the try block throws an error, the control goes to the except block.
+
+try:
+    [Statement body block]
+    raiseException()
+
+except Exception as e:
+    [Error processing block]
