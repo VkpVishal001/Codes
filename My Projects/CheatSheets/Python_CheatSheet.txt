@@ -88,7 +88,7 @@ Ex: for i in range(7):
 
 Ex: for i in range(7):
         if (i==5):
-            break
+            continue
         else:
             print(i, end=" ")
 
@@ -270,18 +270,50 @@ A function is a block of code that performs a specific task. You can pass parame
 def my_function(<parameters>):
     <Statements>
 
+2. Calling a function :
+
+my_function(<paramaters>)
+
+Examples of functions :
+
+1. A function which prints the product of two numbers.
+
+def product(a,b):
+    c = a*b
+    print(c)
+
+product(8,7)
+
+2. A function which returns the product of two numbers.
+
+def product(a,b):
+    c = a*b
+    return c
+
+k = product(8,7)
+print(k)
+
 (.) File Handling :
 
 File handling refers to reading or writing data from files. Python provides some functions that allow us to manipulate data in the files.
 
 1. open() function (Syntax) : var_name = open("file name","opening mode")
 
+    "opening modes" in Python :
+
+    1. r - to read the content from file
+    2. w - to write the content into file
+    3. a - to append the existing content into file
+    4. r+: To read and write data into the file. The previous data in the file will be overridden.
+    5. w+: To write and read data. It will override existing data.
+    6. a+: To append and read data from the file. It won’t override existing data.
+                                                                                    
 2. close() function : var_name.close()
 
 3. Read functions : It contains different methods, read(), readline() and readlines()
 
 3a. read() : It return one big string
-3b. read-lines() : It returns a list of lines
+3b. readlines() : It returns a list of lines
 3c. readline() : It returns one line at a time
 
 4. Write functions :
