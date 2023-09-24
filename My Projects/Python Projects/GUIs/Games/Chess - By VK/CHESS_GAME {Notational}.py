@@ -27,11 +27,11 @@ class Chess_App(QtWidgets.QMainWindow):
         for var1 in range(8):
             if var1 % 2 == 0:
                 for i in range(0,8,2):
-                    self.Chess_Board[(var1*8)+i+1].setStyleSheet("QPushButton {background-color : lightgreen}")
+                    self.Chess_Board[(var1*8)+i+1].setStyleSheet("QPushButton {background-color : brown}")
                     self.Chess_Board[(var1*8)+i+2].setStyleSheet("QPushButton {background-color : white}")
             elif var2 % 2 == 1:
                 for i in range(1,9,2):
-                    self.Chess_Board[(var1*8)+i+1].setStyleSheet("QPushButton {background-color : lightgreen}")
+                    self.Chess_Board[(var1*8)+i+1].setStyleSheet("QPushButton {background-color : brown}")
                     self.Chess_Board[(var1*8)+i+0].setStyleSheet("QPushButton {background-color : white}")
 
             for var2 in range(8):

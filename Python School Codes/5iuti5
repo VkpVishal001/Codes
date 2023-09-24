@@ -1,0 +1,15 @@
+def f(n):
+    if (n==0):
+        return 0
+    else:
+        return (n%10)**3 + f(n//10)
+
+def f(a,b,n-1):
+    if (n==0):
+        return (a+b)
+    else:
+        print(a+b)
+        return (f(b,a+b,n-1))
+    
+k = f(0,1,10)
+print(k)
